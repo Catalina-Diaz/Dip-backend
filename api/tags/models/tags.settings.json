@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "productos": {
+      "collection": "productos",
+      "via": "tag"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tags"
+    }
+  }
+}
