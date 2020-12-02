@@ -16,13 +16,13 @@
       "required": true
     },
     "productos": {
-      "collection": "productos",
-      "via": "tag"
+      "via": "tag",
+      "collection": "productos"
     },
     "user": {
+      "via": "tags",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "tags"
+      "model": "user"
     }
   }
 }

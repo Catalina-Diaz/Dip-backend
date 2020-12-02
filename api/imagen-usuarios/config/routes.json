@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/imagen-usuarios",
+      "handler": "imagen-usuarios.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imagen-usuarios/count",
+      "handler": "imagen-usuarios.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/imagen-usuarios/:id",
+      "handler": "imagen-usuarios.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/imagen-usuarios",
+      "handler": "imagen-usuarios.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/imagen-usuarios/:id",
+      "handler": "imagen-usuarios.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/imagen-usuarios/:id",
+      "handler": "imagen-usuarios.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

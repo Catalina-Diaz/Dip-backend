@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imagen_usuarios",
+  "info": {
+    "name": "Imagen-usuarios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "user": {
+      "via": "imagen_usuario",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -22,7 +22,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "precio": {
       "type": "string",
@@ -37,13 +37,13 @@
       "default": true
     },
     "tag": {
-      "via": "productos",
-      "model": "tags"
+      "model": "tags",
+      "via": "productos"
     },
     "user": {
+      "via": "productos",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "productos"
+      "model": "user"
     }
   }
 }

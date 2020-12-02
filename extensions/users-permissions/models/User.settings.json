@@ -59,27 +59,20 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "imagen": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true
-    },
     "telefono": {
       "type": "string"
     },
     "productos": {
-      "via": "user",
-      "collection": "productos"
+      "collection": "productos",
+      "via": "user"
     },
     "tags": {
-      "via": "user",
-      "collection": "tags"
+      "collection": "tags",
+      "via": "user"
+    },
+    "imagen_usuario": {
+      "model": "imagen-usuarios",
+      "via": "user"
     }
   }
 }
